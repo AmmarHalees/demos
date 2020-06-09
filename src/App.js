@@ -1,55 +1,27 @@
 import React, { Fragment } from 'react';
-import './App.css';
-import Home from './containers/Home/Home';
-import { Link, Switch } from 'react-router-dom';
-import Projects from './containers/Projects/Projects';
-import Bus from './containers/Bus/Bus';
+import { Switch } from 'react-router-dom';
 import RouteWithSubRoutes from './components/RouteWithSubRoutes/RouteWithSubRoutes';
-import ThankYou from './containers/ThankYou/ThankYou';
+import { routes_data } from './utils/routesconfig';
+
+import './App.css';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 
 
-export const routes = [
-  {
-      path: "/home",
-      component: Home
-  },
-  {
-      path: "/projects",
-      component: Projects,
-      routes: [
-          {
-              path: "/projects/bus",
-              component: Bus
-          }
-          ,
-          {
-              path: "/projects/thankyou",
-              component: ThankYou
-          }
-      
-    ]
-  }
-];
 
 function App() {
   return (
     <Fragment>
-      <div>
-        <ul>
-          <li>
-            <Link to="/home">home</Link>
-          </li>
-          <li>
-            <Link to="/projects">projects</Link>
-          </li>
-        </ul>
 
-        <Switch>
-          {routes.map((route, i) => (
-            <RouteWithSubRoutes key={i} {...route} />
-          ))}
-        </Switch>
-      </div>
+      <Header />
+
+      <Switch>
+        {routes_data.map((route, i) => (
+          <RouteWithSubRoutes key={i} {...route} />
+        ))}
+      </Switch>
+
+      <Footer/>
 
     </Fragment>
   );

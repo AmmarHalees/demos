@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Home.css';
 import Card from '../../components/Card/Card';
-import { projectdata } from '../../api/projectdata';
+import { projectdata } from '../../utils/projectdata';
 import { Link } from 'react-router-dom';
 
 class Home extends Component {
@@ -48,6 +48,12 @@ class Home extends Component {
 
 
                 </main>
+
+                <div>
+
+                    <h2>We Love You</h2>
+
+                </div>
 
 
             </div>

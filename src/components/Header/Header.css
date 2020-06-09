@@ -1,0 +1,9 @@
+.headerNav {
+    padding: 10px;
+    background: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
