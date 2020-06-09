@@ -1,3 +1,4 @@
+
 export const projectdata = [
 
     {
@@ -6,18 +7,20 @@ export const projectdata = [
         desc : 'Great',
         price: '2.99',
         id:'1',
-        link:'bus'
+        link:'bus',
+        background : 'https://i.etsystatic.com/23459858/r/il/af788b/2342634370/il_794xN.2342634370_7ifm.jpg'
     }
 
     ,
 
     {
 
-        title: 'Digital Business Card',
+        title: 'Interactive Digital “Thank You for your order” Card',
         desc : 'Ji',
         price: '2.99',
         id:'2',
-        link:'thankyou'
+        link:'thankyou',
+        background: 'https://i.etsystatic.com/23459858/r/il/854b98/2390223737/il_794xN.2390223737_3c5m.jpg'
     }
 
 ]

@@ -1,30 +1,41 @@
 import React from 'react';
 import './Card.css';
 
+const image_style = (background) => {
+  return (
+    {
+      background : `url(${background})`,
+      backgroundSize: 'contain',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'center'
+    }
+  )
+}
 
-const Card = ({ title, id, price, desc }) => {
+const Card = ({ title, price, desc, background }) => {
+
   return (
 
 
-      <div className="card">
+    <div className="card">
 
-        <div className="cardimage"></div>
+      <div className="cardimage" style={image_style(background)}></div>
 
-        <div className="cardBody">
+      <div className="cardBody">
 
-          <h2>{title}</h2>
+        <h2>{title}</h2>
 
-          <p>{desc}</p>
+        <p>{desc}</p>
 
-          <footer>
+        <footer>
 
-            Price = {price}
+          Price = {price}
 
-          </footer>
-
-        </div>
+        </footer>
 
       </div>
+
+    </div>
 
 
 
