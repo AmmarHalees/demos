@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Home.css';
 import Card from '../../components/Card/Card';
 import { projectdata } from '../../api/projectdata';
+import { Link } from 'react-router-dom';
 
 class Home extends Component {
     constructor(props) {
@@ -14,7 +15,7 @@ class Home extends Component {
             <div className="homeContainer">
 
 
-                <section className="banner"> 
+                <section className="banner">
 
 
                 </section>
@@ -29,10 +30,13 @@ class Home extends Component {
 
                             return (
 
+
                                 <li key={project.id}>
 
-                                    <Card {...project} />
+                                    <Link to={`/projects/${project.link}`}>
 
+                                        <Card {...project} />
+                                    </Link>
 
                                 </li>)
 

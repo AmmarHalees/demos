@@ -30,3 +30,14 @@ a{
   text-decoration: none;
   color: inherit;
 }
+
+.itemsContainer{
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+  justify-items: center;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  grid-gap: 20px;
+}

@@ -5,7 +5,6 @@ import './Card.css';
 const Card = ({ title, id, price, desc }) => {
   return (
 
-    <a href="#">
 
       <div className="card">
 
@@ -27,7 +26,6 @@ const Card = ({ title, id, price, desc }) => {
 
       </div>
 
-    </a>
 
 
   );
