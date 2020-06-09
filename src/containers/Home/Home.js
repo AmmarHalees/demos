@@ -51,7 +51,6 @@ class Home extends Component {
 
                 <div>
 
-                    <h2>We Love You</h2>
 
                 </div>
 

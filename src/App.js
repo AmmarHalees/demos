@@ -15,13 +15,18 @@ function App() {
 
       <Header />
 
-      <Switch>
-        {routes_data.map((route, i) => (
-          <RouteWithSubRoutes key={i} {...route} />
-        ))}
-      </Switch>
+      <div style={{minHeight:'600px'}}>
 
-      <Footer/>
+        <Switch>
+          {routes_data.map((route, i) => (
+            <RouteWithSubRoutes key={i} {...route} />
+          ))}
+        </Switch>
+
+      </div>
+
+
+      <Footer />
 
     </Fragment>
   );
