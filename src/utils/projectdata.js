@@ -8,7 +8,7 @@ export const projectdata = [
         price: '2.99',
         id:'1',
         link:'bus',
-        background : 'https://i.etsystatic.com/23459858/r/il/af788b/2342634370/il_794xN.2342634370_7ifm.jpg'
+        background : 'https://i.etsystatic.com/23459858/r/il/f8fe7e/2353879850/il_794xN.2353879850_2hdq.jpg'
     }
 
     ,
@@ -20,7 +20,7 @@ export const projectdata = [
         price: '2.99',
         id:'2',
         link:'thankyou',
-        background: 'https://i.etsystatic.com/23459858/r/il/854b98/2390223737/il_794xN.2390223737_3c5m.jpg'
+        background: 'https://i.etsystatic.com/23459858/r/il/6959e8/2401480587/il_794xN.2401480587_hid0.jpg'
     }
 
 ]

@@ -1,13 +1,14 @@
 import React from 'react';
+import Iframe from 'react-iframe';
 
 const ThankYou = () => {
     return (
+        <Iframe url="/ThankYou/index.html"
+            id="myId"
+            className="iframe"
+        />
 
-        <div>
-
-            ty
-        </div>
-      );
+    );
 }
- 
+
 export default ThankYou;

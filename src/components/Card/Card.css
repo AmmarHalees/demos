@@ -11,8 +11,8 @@
 
 .card{
     width: 450px;
-    border-radius: 10px;
-    box-shadow: rgba(106, 0, 0, 0.08) -1px 1px 20px 9px;
+    border-radius: 40px;
+    box-shadow: rgba(229, 127, 208, 0.08) -1px 1px 20px 9px;
     transition: all .2s ease-in-out;
     transform: scale(0.95);
 
