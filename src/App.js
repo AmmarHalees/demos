@@ -12,45 +12,45 @@ import ThankYou from './containers/ThankYou/ThankYou';
 import Main from './containers/Projects/Main/Main';
 import NotFound from './containers/NotFound/NotFound';
 
-const routes_data = [
-  {
-    path: ['/home', '/', '/ammar'],
-    component: Home,
-    exact: true
+// const routes_data = [
+//   {
+//     path: ['/home', '/', '/ammar'],
+//     component: Home,
+//     exact: true
 
-  },
-  {
-    path: "/projects",
-    component: Projects,
-    routes: [
+//   },
+//   {
+//     path: "/projects",
+//     component: Projects,
+//     routes: [
 
-      {
-        path: "/projects/bus",
-        component: Bus,
+//       {
+//         path: "/projects/bus",
+//         component: Bus,
 
-      }
-      ,
-      {
-        path: "/projects/thankyou",
-        component: ThankYou,
+//       }
+//       ,
+//       {
+//         path: "/projects/thankyou",
+//         component: ThankYou,
 
-      }
-      ,
+//       }
+//       ,
 
-      {
-        path: "/projects",
-        component: Main,
-        // exact:true
+//       {
+//         path: "/projects",
+//         component: Main,
+//         // exact:true
 
-      }
+//       }
 
-    ]
-  }
-  ,
-  {
-    component: NotFound,
-  }
-];
+//     ]
+//   }
+//   ,
+//   {
+//     component: NotFound,
+//   }
+// ];
 
 function App() {
   return (
@@ -58,19 +58,36 @@ function App() {
 
       <Header />
 
-      <div style={{minHeight:'600px'}}>
+      <div style={{ minHeight: '600px' }}>
+
 
         <Switch>
-{/* 
-          <Route  path="/">
 
-                <Home/>
 
-          </Route> */}
+
+          <Route path="/projects">
+
+            <Projects />
+
+          </Route>
+
+
+          <Route path={['/', '/home']}>
+
+            <Home />
+
+          </Route>
+
+        </Switch>
+
+
+        {/* 
+        <Switch>
+
           {routes_data.map((route, i) => (
             <RouteWithSubRoutes key={i} {...route} />
           ))}
-        </Switch>
+        </Switch> */}
 
       </div>
 
