@@ -2,7 +2,7 @@ import React from 'react';
 import { header_links } from '../../utils/headerlinks';
 import { Link } from 'react-router-dom';
 import './Header.css';
-import logo from '../../assets/PR2.jpg';
+import logo from '../../assets/logo.png';
 
 const Header = () => {
     return (
