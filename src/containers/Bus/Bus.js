@@ -1,10 +1,18 @@
 import React from 'react';
 
-const Bus = () => {
-    return ( 
+import Iframe from 'react-iframe';
 
-        <div>bus</div>
-     );
+const Bus = () => {
+    return (
+
+
+            <Iframe url="/DigitalBusinessCard/index.html"
+                id="myId"
+                className="iframe"
+            />
+
+
+    );
 }
- 
+
 export default Bus;
